@@ -15,6 +15,6 @@ model = genai.GenerativeModel('gemini-pro')
 prompt = st.chat_input("Enter a prompt:")
 
 if prompt is not None:
-    response = model.generate_content()
+    response = model.generate_content(prompt)
 
     st.write(response.text)
